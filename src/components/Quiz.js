@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Timer from './Timer';
 import { Howl } from 'howler';
 
+// Helper function to decode HTML entities
+const decodeHTML = (text) => {
+    const textArea = document.createElement('textarea');
+    textArea.innerHTML = text;
+    return textArea.value;
+};
+
 const Quiz = ({ data, onFinish, setScore, setTimeSpent }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [timeSpent, setQuizTimeSpent] = useState(0);
@@ -55,12 +62,14 @@ const Quiz = ({ data, onFinish, setScore, setTimeSpent }) => {
     return (
         <div className={`quiz animated ${animationClass}`}>
             <h2>Question {currentQuestionIndex + 1}/{data.questions.length}</h2>
-            <p>{data.questions[currentQuestionIndex].question}</p>
+            {/* Decode the question text */}
+            <p>{decodeHTML(data.questions[currentQuestionIndex].question)}</p>
             <Timer timeSpent={timeSpent} />
             <div className="choices">
                 {data.questions[currentQuestionIndex].answers.map((answer, index) => (
+                    // Decode the answers before displaying them
                     <button key={index} onClick={() => handleAnswer(answer)} disabled={isAnswered}>
-                        {answer}
+                        {decodeHTML(answer)}
                     </button>
                 ))}
             </div>
