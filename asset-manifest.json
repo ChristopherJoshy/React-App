@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/React-App/static/css/main.453b0a27.chunk.css",
-    "main.js": "/React-App/static/js/main.5c0c1f8a.chunk.js",
-    "main.js.map": "/React-App/static/js/main.5c0c1f8a.chunk.js.map",
-    "runtime~main.js": "/React-App/static/js/runtime~main.a4b1c3b3.js",
-    "runtime~main.js.map": "/React-App/static/js/runtime~main.a4b1c3b3.js.map",
-    "static/js/2.daf3f5a2.chunk.js": "/React-App/static/js/2.daf3f5a2.chunk.js",
-    "static/js/2.daf3f5a2.chunk.js.map": "/React-App/static/js/2.daf3f5a2.chunk.js.map",
-    "index.html": "/React-App/index.html",
-    "precache-manifest.ab39e6b07b40076afd68160e548264f6.js": "/React-App/precache-manifest.ab39e6b07b40076afd68160e548264f6.js",
-    "service-worker.js": "/React-App/service-worker.js",
-    "static/css/main.453b0a27.chunk.css.map": "/React-App/static/css/main.453b0a27.chunk.css.map"
-  }
+    "main.css": "/Quiz-App-React-first/static/css/main.ae61df92.css",
+    "main.js": "/Quiz-App-React-first/static/js/main.7ab7effd.js",
+    "index.html": "/Quiz-App-React-first/index.html",
+    "main.ae61df92.css.map": "/Quiz-App-React-first/static/css/main.ae61df92.css.map",
+    "main.7ab7effd.js.map": "/Quiz-App-React-first/static/js/main.7ab7effd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae61df92.css",
+    "static/js/main.7ab7effd.js"
+  ]
 }
